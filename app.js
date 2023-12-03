@@ -40,7 +40,7 @@ const BooksRoutes = require("./src/routes/BooksRoutes");
 
 //* Usando as rotas
 app.use("/", UserRoutes);
-app.use("book/", BooksRoutes);
+app.use("/book", BooksRoutes);
 
 conn
   .sync()

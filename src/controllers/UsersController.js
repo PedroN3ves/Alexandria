@@ -1,5 +1,7 @@
-const User = require("../models/User");
-const Book = require("../models/Books");
+/* eslint-disable no-console */
+/* eslint-disable no-unused-vars */
+const User = require('../models/User');
+const Book = require('../models/Books');
 
 module.exports = {
   async createUser(req, res) {
@@ -20,27 +22,27 @@ module.exports = {
   //     return res.json(users)
   // },
   async pageHome(req, res) {
-    return res.render("home");
+    return res.render('home');
   },
 
   async findUser(req, res) {
     const { id } = req.params;
     const user = await User.findByPk(id);
 
-    res.redirect("/");
+    res.redirect('/');
   },
   pageLogin(req, res) {
-    res.render("login");
+    res.render('login');
   },
   async pageAllBooks(req, res) {
     const books = await Book.findAll({ raw: true });
 
-    console.log(books)
+    console.log(books);
 
-    res.render("allBooks", { books });
+    res.render('allBooks', { books });
   },
   async pageRegisterBook(req, res) {
-    res.render("registerBook")
+    res.render('registerBook');
   },
   async update(req, res) {
     const { id } = req.params;
@@ -54,16 +56,16 @@ module.exports = {
       },
       {
         where: { id },
-      }
+      },
     );
 
-    return res.json({ mensage: "User updated!" });
+    return res.json({ mensage: 'User updated!' });
   },
 
   async deleteUser(req, res) {
     const { id } = req.params;
     const user = await User.destroy({ where: { id } });
 
-    return res.json({ menssage: "User deleted!" });
+    return res.json({ menssage: 'User deleted!' });
   },
 };

@@ -1,8 +1,8 @@
 const { DataTypes } = require('sequelize');
 
-const db = require('../db/connect');
+const db = require('../database/conn');
 
-const User = db.define('User' , {
+const Books = db.define('Books', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -11,21 +11,25 @@ const User = db.define('User' , {
         unique: true
     },
 
-    name: {
+    title: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+
+    description: {
         type: DataTypes.STRING,
         allowNull: false
     },
 
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
+    pages_number: {
+        type: DataTypes.INTEGER,
+        allowNull: false
     },
 
-    password: {
+    author: {
         type: DataTypes.STRING,
         allowNull: false
     }
 });
 
-module.exports = User
+module.exports = Books

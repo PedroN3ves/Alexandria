@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0px 5% 0px 5%;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+  
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #loginLink {
+    background-color: #0097b2;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    color: #fff;
+  
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #imgMain {
+    width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #initialText {
+    margin-top: 150px;
+    margin-bottom: 250px;
+    width: 840px;
+    color: #000;
+  
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  #initialText span {
+    color: #0097b2;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 145px;
+    max-width: 1770px;
+  }
+  main section div {
+    width: 493.659px;
+    height: 350px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  main section div img {
+    width: 111.674px;
+    height: 98px;
+  }
+  main section div h2 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  main section div p {
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 400px;
+  }
+  .azul {
+    background-color: #014f5c;
+    color: white;
+  }
+  
+  #footer1 {
+    margin-top: 400px;
+    background: #014f5c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+  #footer1 div {
+    display: flex;
+    align-items: center;
+  }
+  #footer1 div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  #footer1 div div img {
+    width: 234.146px;
+    height: 118px;
+  }
+  
+  #footer1 div div p {
+    color: #fff;
+  
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #footer1 div div h2 {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  #redesSociais a img {
+    width: 44.878px;
+    height: 39px;
+  }
+  
+  #footer2 {
+    display: flex;
+    padding: 18px 0px 18px 0px;
+    justify-content: center;
+    align-items: center;
+  
+    color: rgba(0, 0, 0, 0.58);
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  

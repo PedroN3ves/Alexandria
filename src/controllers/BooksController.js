@@ -16,7 +16,7 @@ module.exports = {
             author
         });
 
-        return res.json(book);
+        res.redirect('/')
     },
 
     async findBooks(req, res) {
